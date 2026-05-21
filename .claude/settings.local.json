@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx --yes create-vite@5 . --template react)",
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(./node_modules/.bin/tailwindcss init *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(sed -i \"s|import Introduction from './module/introducti'|import Introduction from './module/introduction/introduction'|\" /home/carson/Desktop/work/portfolio/src/App.jsx)",
+      "Bash(sed -i \"s|<div className=\\\\\"Introduction\\\\\"></div>|<Introduction />|\" /home/carson/Desktop/work/portfolio/src/App.jsx)"
+    ]
+  }
+}
