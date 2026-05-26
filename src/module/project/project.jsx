@@ -1,4 +1,35 @@
 import "./project.css"
+import logoCSS from "../../assets/CSS3_logo.svg.png"
+import logoHTML from "../../assets/HTML_logo.png"
+import logoJS from "../../assets/JavaScript-logo.png"
+import logoMySQL from "../../assets/MySQL_logo.png"
+import logoNextJS from "../../assets/nextjs.png"
+import logoPHP from "../../assets/php_logo.jpeg"
+import logoPython from "../../assets/python_logo.png"
+import logoNLTK from "../../assets/Python_NLTK_logo.png"
+import logoPandas from "../../assets/python-pandas-logo-300.png"
+import logoReact from "../../assets/React-icon.svg.png"
+import logoTailwind from "../../assets/TailwindCSS_logo.png"
+import logoTS from "../../assets/Typescript_logo_2020.svg.png"
+import logoGitHubActions from "../../assets/github_action_logo.png"
+import logoYAML from "../../assets/YAML-1.jpg"
+
+const TAG_LOGOS = {
+  "CSS":        { src: logoCSS,      alt: "CSS3" },
+  "HTML":       { src: logoHTML,     alt: "HTML" },
+  "JavaScript": { src: logoJS,       alt: "JavaScript" },
+  "MySQL":      { src: logoMySQL,    alt: "MySQL" },
+  "Next.js":    { src: logoNextJS,   alt: "Next.js" },
+  "PHP":        { src: logoPHP,      alt: "PHP" },
+  "Python":     { src: logoPython,   alt: "Python" },
+  "NLTK":       { src: logoNLTK,     alt: "NLTK" },
+  "Pandas":     { src: logoPandas,   alt: "Pandas" },
+  "React":      { src: logoReact,    alt: "React" },
+  "TailwindCSS":{ src: logoTailwind, alt: "TailwindCSS" },
+  "TypeScript":     { src: logoTS,             alt: "TypeScript" },
+  "GitHub Actions": { src: logoGitHubActions,  alt: "GitHub Actions" },
+  "YAML":           { src: logoYAML,           alt: "YAML" },
+}
 
 const projects = [
   {
@@ -47,9 +78,12 @@ function Project() {
             </div>
             <p className="project-card-desc">{p.desc}</p>
             <div className="project-card-tags">
-              {p.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
-              ))}
+              {p.tags.map((tag) => {
+                const logo = TAG_LOGOS[tag]
+                return logo
+                  ? <span key={tag} className="tag-logo"><img src={logo.src} alt={logo.alt} /></span>
+                  : <span key={tag}>{tag}</span>
+              })}
             </div>
           </div>
         ))}

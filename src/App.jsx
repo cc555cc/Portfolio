@@ -3,6 +3,9 @@ import Navbar from './module/navbar/navbar'
 import Name from './module/name/name'
 import Introduction from './module/introduction/introduction'
 import Project from './module/project/project'
+import Skills from './module/skills/skills'
+import Resume_Section from './module/Resume/resume_module'
+import Contact from './module/contact/contact'
 import avatar from './assets/avatar.png'
 
 function App(){
@@ -11,7 +14,7 @@ function App(){
       <Navbar />
       <div className="scroll-container">
 
-        <div className="scroll-section">
+        <div id="about" className="scroll-section">
           <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: '0 5vw'}} className="aboutMe">
             <div style={{ flex: 1, minWidth: 0 }}>
               <Name />
@@ -22,12 +25,24 @@ function App(){
           </div>
         </div>
 
-        <div className="scroll-section">
+        <div id="introduction" className="scroll-section">
           <Introduction />
         </div>
 
-        <div className="scroll-section full-height">
+        <div id="projects" className="scroll-section full-height">
           <Project />
+        </div>
+
+        <div id="skills" className="scroll-section full-height">
+          <Skills />
+        </div>
+
+        <div id="resume" className="scroll-section full-height">
+          <Resume_Section />
+        </div>
+
+        <div id="contact" className="scroll-section full-height">
+          <Contact />
         </div>
 
       </div>
