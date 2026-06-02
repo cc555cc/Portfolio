@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './module/navbar/navbar'
+import Chatbot from './module/chatbot/chatbot'
 import Name from './module/name/name'
 import Introduction from './module/introduction/introduction'
 import Project from './module/project/project'
@@ -11,6 +12,7 @@ import avatar from './assets/avatar.png'
 function App(){
   return (
     <div className="App">
+      <Chatbot />
       <Navbar />
       <div className="scroll-container">
 

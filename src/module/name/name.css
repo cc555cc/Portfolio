@@ -1,20 +1,24 @@
 .name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
-h1.name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.1em;
+.name-block {
+  display: block;
   line-height: 1;
   user-select: none;
 }
 
+.name-block > * {
+  display: block;
+  margin-top: 0.15em;
+}
+
+.name-block > *:first-child {
+  margin-top: 0;
+}
+
 .Fullname{
-  font-size: clamp(1.3rem, 4.5vw, 5rem);
+  font-size: clamp(1rem, 3vw, 3.5rem);
   font-weight: 300;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -26,7 +30,7 @@ h1.name {
 }
 
 .Englishname {
-  font-size: clamp(2.8rem, 12vw, 13rem);
+  font-size: clamp(2rem, 8vw, 9rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -54,7 +58,7 @@ h1.name {
 the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
 if there is 20 put 20 */
 .animation {
-  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  font-size: clamp(0.75rem, 1.8vw, 1.8rem);
   font-weight: 300;
   letter-spacing: 0.3em;
   color: #39ff14;
@@ -71,26 +75,42 @@ if there is 20 put 20 */
     blink-caret 0.5s step-end infinite alternate;
 }
 
+.introduction {
+  margin: 0.5em 0 0;
+}
+
+.introduction .intro-item + .intro-item {
+  margin-top: 0.3em;
+}
+
+.intro-item {
+  font-size: clamp(0.65rem, 1vw, 0.88rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+.intro-item::before {
+  content: "— ";
+  color: rgba(57, 255, 20, 0.6);
+}
+
 .buttons {
   display: flex;
-  gap: 1.5rem;
-  margin-top: 3em;
+  gap: 0.75rem;
+  margin-top: 1.5em;
 }
 
 .quickaccess {
-  margin-top: 1.2em;
-  margin-right: 3em;
-  height: 10vh;
-  width: 20vh;
-  font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+  font-size: clamp(0.65rem, 1vw, 0.85rem);
   font-weight: 700;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #39ff14;
   background: transparent;
   border: 1px solid rgba(57, 255, 20, 0.5);
   border-radius: 4px;
-  padding: 0.5em 1.4em;
+  padding: 0.5em 1.2em;
   cursor: pointer;
   transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   -webkit-text-fill-color: #39ff14;

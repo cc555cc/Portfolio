@@ -11,7 +11,7 @@
   text-transform: uppercase;
   line-height: 1.8;
   text-align: center;
-  background: linear-gradient(135deg, #ccffcc 0%, #39ff14 60%, #b44fff 100%);
+  background: linear-gradient(135deg, #ccffcc 0%, #39ff14 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -27,7 +27,7 @@
 
 .intro-wrapper:hover {
   transform: scale(1.08);
-  border-color: #9333ea;
+  border-color: #39ff14;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
