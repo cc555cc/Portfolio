@@ -7,7 +7,7 @@ import Project from './module/project/project'
 import Skills from './module/skills/skills'
 import Resume_Section from './module/Resume/resume_module'
 import Contact from './module/contact/contact'
-import avatar from './assets/avatar.png'
+import avatar from './assets/avatar.jpg'
 
 function App(){
   return (
@@ -17,12 +17,12 @@ function App(){
       <div className="scroll-container">
 
         <div id="about" className="scroll-section">
-          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: '0 5vw'}} className="aboutMe">
-            <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: '0 5vw', gap: '3vw'}} className="aboutMe">
+            <div style={{ flex: 1, minWidth: 0, overflow: 'hidden' }}>
               <Name />
             </div>
             <div style={{ flexShrink: 0 }}>
-              <img src={avatar} alt="Avatar" style={{ width: '40vw', maxWidth: '500px', height: 'auto' }}/>
+              <img src={avatar} alt="Avatar" style={{ width: '28vw', maxWidth: '400px', height: 'calc(100vh - 180px)', objectFit: 'cover', objectPosition: 'center top', borderRadius: '12px', border: '2px solid #39ff14', boxShadow: '0 0 18px rgba(57,255,20,0.45), 0 0 60px rgba(57,255,20,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
             </div>
           </div>
         </div>
