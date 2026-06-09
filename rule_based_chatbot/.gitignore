@@ -1,0 +1,33 @@
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and local config
+.env
+.env.*
+
+# Local learning artifacts
+learning_resource/learned_interactions.jsonl
+learning_resource/learning_log.txt
+training_sentences.txt
+
+# Node dependencies and build caches
+node_modules/
+dist/
+build/
+.vite/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
