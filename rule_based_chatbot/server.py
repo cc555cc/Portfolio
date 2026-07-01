@@ -7,7 +7,7 @@ from chatbot import generate_response
 nltk.download('wordnet', quiet=True)
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="*", methods=["GET", "POST", "OPTIONS"], allow_headers=["Content-Type"])
 
 
 @app.route('/api/chat', methods=['POST'])
