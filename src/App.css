@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .scroll-container {
@@ -9,6 +10,10 @@ html, body {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll-section {

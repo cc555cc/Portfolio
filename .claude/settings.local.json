@@ -10,7 +10,8 @@
       "Bash(curl -s http://localhost:5173)",
       "Bash(sed -i \"s|import Introduction from './module/introducti'|import Introduction from './module/introduction/introduction'|\" /home/carson/Desktop/work/portfolio/src/App.jsx)",
       "Bash(sed -i \"s|<div className=\\\\\"Introduction\\\\\"></div>|<Introduction />|\" /home/carson/Desktop/work/portfolio/src/App.jsx)",
-      "Bash(node --input-type=module)"
+      "Bash(node --input-type=module)",
+      "PowerShell(Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force)"
     ]
   }
 }
