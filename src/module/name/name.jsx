@@ -22,9 +22,9 @@ function Name() {
           <span><a href="https://www.instagram.com/lokk_0555/" target="_blank" rel="noopener noreferrer"><img style={{width:'2em', height:'2em'}} src={instagramIcon} alt="Instagram" /></a></span>
         </div>
         <div className="buttons" style={{margin: '3em 0', display: 'flex', gap: '1em', flexWrap: 'wrap'}}>
-          <button className="quickaccess">Projects</button>
-          <button className="quickaccess">Skills</button>
-          <button className="quickaccess">Resume</button>
+          <button className="quickaccess" onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>Projects</button>
+          <button className="quickaccess" onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}>Skills</button>
+          <button className="quickaccess" onClick={() => document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' })}>Resume</button>
         </div>
       </div>
     </section>
