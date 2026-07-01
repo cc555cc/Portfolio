@@ -28,7 +28,7 @@ function Chatbot() {
         setLoading(true)
 
         try {
-            const res = await fetch('https://portfolio-production-9728.up.railway.app/api/chat', {
+            const res = await fetch('https://portfolio-production-7d71.up.railway.app/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: trimmed }),
