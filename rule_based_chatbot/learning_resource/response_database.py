@@ -187,7 +187,9 @@ STOP_WORDS = [
 PORTFOLIO_INFO = {
     "greeting": {
         "responses": [
-            "Hi! I'm Carson's assistant. Ask me about his skills, projects, resume, or how to get in touch.",
+            "Hi! I'm a chatbot created by Carson. I was created as a restaurant themed rule-based but is now adjusted"
+            "to reply question regarding to his skills, projects, resume, or how to get in touch. Unfortunately, as a rule-based chatbot,my ability to answer is limited by "
+            "the keywords that I was trained on. If you ask me something that I don't know, I will let you know.",
             "Hey there! I can tell you about Carson's background, skills, projects, or experience.",
             "Hello! What would you like to know about Carson?",
         ],

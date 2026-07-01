@@ -5,7 +5,7 @@ import chatIcon from '../../assets/chat-bubble.svg'
 
 const INITIAL_MESSAGE = {
     from: 'bot',
-    text: "Hi! I'm Carson's assistant. Ask me about his skills, projects, resume, or how to get in touch.",
+    text: "Hi! I'm a chatbot created by Carson. I was created as a restaurant themed rule-based but is now adjusted to reply to questions regarding his skills, projects, resume, or how to get in touch. Unfortunately, as a rule-based chatbot, my ability to answer is limited by the keywords that I was trained on. If you ask me something that I don't know, I will let you know.",
 }
 
 function Chatbot() {
