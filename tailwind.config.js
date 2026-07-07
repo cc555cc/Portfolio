@@ -4,9 +4,10 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        // From Uiverse.io by H_K_MENON
         typing: {
           from: { width: '0' },
-          to: { width: '13.2ch' },
+          to: { width: 'calc(17ch + 5.1em)' },
         },
         'blink-caret': {
           '50%': { borderColor: 'transparent' },
@@ -17,7 +18,7 @@ export default {
         },
       },
       animation: {
-        typing: 'typing 5s steps(13, end) forwards, blink-caret 0.5s step-end infinite alternate',
+        typing: 'typing 3s steps(17, end), blink-caret 0.5s step-end infinite alternate',
         'chatbot-blink': 'chatbot-blink 1.2s infinite',
       },
     },
