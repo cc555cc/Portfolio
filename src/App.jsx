@@ -22,7 +22,7 @@ function App(){
               <Name />
             </div>
             <div style={{ flexShrink: 0 }}>
-              <img src={avatar} alt="Avatar" style={{ width: '28vw', maxWidth: '400px', height: 'calc(100vh - 180px)', objectFit: 'cover', objectPosition: 'center top', borderRadius: '12px', border: '2px solid #39ff14', boxShadow: '0 0 18px rgba(57,255,20,0.45), 0 0 60px rgba(57,255,20,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
+              <img src={avatar} alt="Avatar" style={{ width: 'auto', maxWidth: '40vw', height: 'calc(100vh - 240px)', objectFit: 'cover', objectPosition: 'center top', borderRadius: '12px', border: '2px solid #39ff14', boxShadow: '0 0 18px rgba(57,255,20,0.45), 0 0 60px rgba(57,255,20,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
             </div>
           </div>
         </div>

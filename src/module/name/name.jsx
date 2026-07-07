@@ -9,7 +9,7 @@ function Name() {
       <div className="name-block">
         <span className="Fullname">Lok Yung Chan</span>
         <span className="Englishname">Carson</span>
-        <div className="animation" style={{marginBottom: '2em'}}>Software Engineer</div>
+        <div className="animation" style={{marginBottom: '1em', color: '#39ff14', fontSize: '3.25em'}}>Software Engineer</div>
         <div className="intro-item text-sm text-white/60 leading-relaxed my-2">Passionate and dedicated software engineering 3rd year student at Ontario Tech University</div>
         <div className="intro-item text-sm text-white/60 leading-relaxed my-2">Experienced in full-stack development, agile development practices and CI/CD pipeline development</div>
         <div className="intro-item text-sm text-white/60 leading-relaxed my-2">Proficient in Python, Javascript, C, C++, MySQL</div>
