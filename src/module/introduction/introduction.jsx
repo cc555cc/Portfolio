@@ -1,5 +1,5 @@
 import "./introduction.css"
-import OTUlogo from '../../assests/OTUlogo.png'
+import OTUlogo from '../../assets/OTUlogo.jpg'
 
 function Introduction() {
   return (

@@ -1,4 +1,3 @@
-import './App.css'
 import Navbar from './module/navbar/navbar'
 import Chatbot from './module/chatbot/chatbot'
 import Name from './module/name/name'
@@ -9,41 +8,44 @@ import Resume_Section from './module/Resume/resume_module'
 import Contact from './module/contact/contact'
 import avatar from './assets/avatar.jpg'
 
+const sectionBase   = "snap-start h-[calc(100vh-60px)] flex items-center justify-center"
+const sectionStretch = "snap-start h-[calc(100vh-60px)] flex items-stretch justify-center"
+
 function App(){
   return (
-    <div className="App">
+    <div>
       <Chatbot />
       <Navbar />
-      <div className="scroll-container">
+      <div className="h-[calc(100vh-60px)] mt-[60px] overflow-y-scroll snap-y snap-mandatory [scrollbar-width:none]">
 
-        <div id="about" className="scroll-section">
-          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', padding: '0 5vw', gap: '3vw'}} className="aboutMe">
-            <div style={{ flex: 1, minWidth: 0, overflow: 'hidden' }}>
+        <div id="about" className={`${sectionBase} items-start pt-[8vh]`}>
+          <div className="flex justify-between items-center w-full px-[5vw] gap-[3vw]">
+            <div className="flex-1 min-w-0 overflow-hidden">
               <Name />
             </div>
-            <div style={{ flexShrink: 0 }}>
-              <img src={avatar} alt="Avatar" style={{ width: 'auto', maxWidth: '40vw', height: 'calc(100vh - 240px)', objectFit: 'cover', objectPosition: 'center top', borderRadius: '12px', border: '2px solid #39ff14', boxShadow: '0 0 18px rgba(57,255,20,0.45), 0 0 60px rgba(57,255,20,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
+            <div className="shrink-0">
+              <img src={avatar} alt="Avatar" style={{ width: 'clamp(240px, 34vw, 500px)', maxHeight: '80vh', objectFit: 'contain', borderRadius: '12px', border: '2px solid #39ff14', boxShadow: '0 0 18px rgba(57,255,20,0.45), 0 0 60px rgba(57,255,20,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
             </div>
           </div>
         </div>
 
-        <div id="introduction" className="scroll-section">
+        <div id="introduction" className={sectionBase}>
           <Introduction />
         </div>
 
-        <div id="projects" className="scroll-section full-height">
+        <div id="projects" className={sectionStretch}>
           <Project />
         </div>
 
-        <div id="skills" className="scroll-section full-height">
+        <div id="skills" className={sectionStretch}>
           <Skills />
         </div>
 
-        <div id="resume" className="scroll-section full-height">
+        <div id="resume" className={sectionStretch}>
           <Resume_Section />
         </div>
 
-        <div id="contact" className="scroll-section full-height">
+        <div id="contact" className={sectionStretch}>
           <Contact />
         </div>
 
