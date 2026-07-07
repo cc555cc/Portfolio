@@ -7,6 +7,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString()
 
+const HIGHLIGHTS = [
+  "3.81 GPA · President's Honour List",
+  "Python · React · TypeScript · SQL",
+  "5+ shipped projects",
+]
+
 function Resume() {
   const containerRef = useRef(null)
   const [containerSize, setContainerSize] = useState({ width: 0, height: 0 })
