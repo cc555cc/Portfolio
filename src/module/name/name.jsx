@@ -10,7 +10,7 @@ function Name() {
           className="block font-light tracking-[0.3em] uppercase whitespace-nowrap"
           style={{
             fontSize: "clamp(1rem, 3vw, 3.5rem)",
-            background: "linear-gradient(135deg, #ccffcc 0%, #39ff14 100%)",
+            background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
@@ -22,28 +22,29 @@ function Name() {
           className="block font-extrabold tracking-[-0.02em] uppercase whitespace-nowrap"
           style={{
             fontSize: "clamp(2rem, 8vw, 9rem)",
-            background: "linear-gradient(135deg, #39ff14 0%, #00ff41 50%, #00e63a 100%)",
+            background: "linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
-            filter: "drop-shadow(0 0 40px rgba(57, 255, 20, 0.6))",
+            filter: "drop-shadow(0 0 40px rgba(255, 255, 255, 0.6))",
+            paddingLeft: "0.5em",
           }}
         >
           Carson
         </span>
         <div
-          className="text-[clamp(0.75rem,1.8vw,1.8rem)] font-light tracking-[0.3em] text-[#39ff14] border-r-[0.1em] border-[#39ff14] w-[calc(17ch_+_5.1em)] pb-[0.2em] whitespace-nowrap overflow-hidden animate-typing"
-          style={{ marginBottom: '2em' }}
+          className="text-[clamp(0.75rem,1.8vw,1.8rem)] font-light tracking-[0.3em] text-[#ffffff]"
+          style={{ marginBottom: '2em', paddingLeft: '10em' }}
         >
           Software Engineer
         </div>
-        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(57,255,20,0.6)]">
+        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(255, 255, 255,0.6)]">
           Passionate and dedicated software engineering 3rd year student at Ontario Tech University
         </div>
-        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(57,255,20,0.6)]">
+        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(255, 255, 255,0.6)]">
           Experienced in full-stack development, agile development practices and CI/CD pipeline development
         </div>
-        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(57,255,20,0.6)]">
+        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(255, 255, 255,0.6)]">
           Proficient in Python, Javascript, C, C++, MySQL
         </div>
         <div style={{display: 'flex', gap: '1em', marginTop: '3em', alignItems: 'center'}}>
@@ -56,19 +57,19 @@ function Name() {
         </div>
         <div style={{margin: '3em 0', display: 'flex', gap: '1em', flexWrap: 'wrap'}}>
           <button
-            className="text-[clamp(0.8rem,1.3vw,1.1rem)] font-bold tracking-[0.2em] uppercase text-[#39ff14] bg-transparent border-2 border-[rgba(57,255,20,0.5)] rounded-md py-[0.75em] px-[2em] cursor-pointer transition-all duration-[250ms] whitespace-nowrap [-webkit-text-fill-color:#39ff14] hover:bg-[rgba(57,255,20,0.1)] hover:border-[#39ff14] hover:shadow-[0_0_12px_rgba(57,255,20,0.35)]"
+            className="text-[clamp(0.8rem,1.3vw,1.1rem)] font-bold tracking-[0.2em] uppercase text-[#ffffff] bg-transparent border-2 border-[rgba(255, 255, 255,0.5)] rounded-md py-[0.75em] px-[2em] cursor-pointer transition-all duration-[250ms] whitespace-nowrap [-webkit-text-fill-color:#ffffff] hover:bg-[rgba(255, 255, 255,0.1)] hover:border-[#ffffff] hover:shadow-[0_0_12px_rgba(255, 255, 255,0.35)]"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Projects
           </button>
           <button
-            className="text-[clamp(0.8rem,1.3vw,1.1rem)] font-bold tracking-[0.2em] uppercase text-[#39ff14] bg-transparent border-2 border-[rgba(57,255,20,0.5)] rounded-md py-[0.75em] px-[2em] cursor-pointer transition-all duration-[250ms] whitespace-nowrap [-webkit-text-fill-color:#39ff14] hover:bg-[rgba(57,255,20,0.1)] hover:border-[#39ff14] hover:shadow-[0_0_12px_rgba(57,255,20,0.35)]"
+            className="text-[clamp(0.8rem,1.3vw,1.1rem)] font-bold tracking-[0.2em] uppercase text-[#ffffff] bg-transparent border-2 border-[rgba(255, 255, 255,0.5)] rounded-md py-[0.75em] px-[2em] cursor-pointer transition-all duration-[250ms] whitespace-nowrap [-webkit-text-fill-color:#ffffff] hover:bg-[rgba(255, 255, 255,0.1)] hover:border-[#ffffff] hover:shadow-[0_0_12px_rgba(255, 255, 255,0.35)]"
             onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Skills
           </button>
           <button
-            className="text-[clamp(0.8rem,1.3vw,1.1rem)] font-bold tracking-[0.2em] uppercase text-[#39ff14] bg-transparent border-2 border-[rgba(57,255,20,0.5)] rounded-md py-[0.75em] px-[2em] cursor-pointer transition-all duration-[250ms] whitespace-nowrap [-webkit-text-fill-color:#39ff14] hover:bg-[rgba(57,255,20,0.1)] hover:border-[#39ff14] hover:shadow-[0_0_12px_rgba(57,255,20,0.35)]"
+            className="text-[clamp(0.8rem,1.3vw,1.1rem)] font-bold tracking-[0.2em] uppercase text-[#ffffff] bg-transparent border-2 border-[rgba(255, 255, 255,0.5)] rounded-md py-[0.75em] px-[2em] cursor-pointer transition-all duration-[250ms] whitespace-nowrap [-webkit-text-fill-color:#ffffff] hover:bg-[rgba(255, 255, 255,0.1)] hover:border-[#ffffff] hover:shadow-[0_0_12px_rgba(255, 255, 255,0.35)]"
             onClick={() => document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Resume

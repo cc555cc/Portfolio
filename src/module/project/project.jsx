@@ -70,7 +70,7 @@ function Project() {
         className="font-bold tracking-[0.2em] uppercase m-0"
         style={{
           fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-          background: "linear-gradient(135deg, #ccffcc 0%, #39ff14 100%)",
+          background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
@@ -78,15 +78,15 @@ function Project() {
       >
         Projects
       </h2>
-      <div className="relative flex-1 w-full overflow-hidden before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:w-px before:bg-gradient-to-b before:from-transparent before:via-[rgba(57,255,20,0.3)] before:to-transparent before:pointer-events-none before:z-[1] after:content-[''] after:absolute after:top-0 after:bottom-0 after:right-0 after:w-px after:bg-gradient-to-b after:from-transparent after:via-[rgba(57,255,20,0.3)] after:to-transparent after:pointer-events-none after:z-[1]">
+      <div className="relative flex-1 w-full overflow-hidden before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:w-px before:bg-gradient-to-b before:from-transparent before:via-[rgba(255, 255, 255,0.3)] before:to-transparent before:pointer-events-none before:z-[1] after:content-[''] after:absolute after:top-0 after:bottom-0 after:right-0 after:w-px after:bg-gradient-to-b after:from-transparent after:via-[rgba(255, 255, 255,0.3)] after:to-transparent after:pointer-events-none after:z-[1]">
         <div className="flex flex-col gap-6 items-center w-full h-full overflow-y-auto [scrollbar-width:none] [-webkit-overflow-scrolling:touch] pt-4 pb-4">
           {projects.map((p) => (
             <div
-              className="border-2 border-transparent rounded-[14px] py-[1.8em] px-[2em] w-[70vw] flex flex-col gap-3 bg-transparent transition-all duration-300 cursor-pointer hover:-translate-y-1.5 hover:border-[#39ff14] hover:bg-white/5 hover:backdrop-blur-md"
+              className="border-2 border-transparent rounded-[14px] py-[1.8em] px-[2em] w-[70vw] flex flex-col gap-3 bg-transparent transition-all duration-300 cursor-pointer hover:-translate-y-1.5 hover:border-[#ffffff] hover:bg-white/5 hover:backdrop-blur-md"
               key={p.title}
             >
               <div className="flex justify-between items-baseline gap-4">
-                <h3 className="text-[1.4rem] font-bold tracking-[0.1em] uppercase text-[#39ff14] m-0">{p.title}</h3>
+                <h3 className="text-[1.4rem] font-bold tracking-[0.1em] uppercase text-[#ffffff] m-0">{p.title}</h3>
                 <span className="text-base tracking-[0.08em] text-white/40 whitespace-nowrap shrink-0">{p.date}</span>
               </div>
               <p className="text-[1.1rem] text-white/65 leading-[1.6] m-0">{p.desc}</p>
@@ -102,7 +102,7 @@ function Project() {
                     : (
                       <span
                         key={tag}
-                        className="text-[0.95rem] tracking-[0.08em] uppercase text-[#39ff14] border border-[rgba(57,255,20,0.4)] rounded px-[10px] py-[3px]"
+                        className="text-[0.95rem] tracking-[0.08em] uppercase text-[#ffffff] border border-[rgba(255, 255, 255,0.4)] rounded px-[10px] py-[3px]"
                       >
                         {tag}
                       </span>

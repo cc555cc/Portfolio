@@ -42,13 +42,13 @@ const tools_icons = [
 const IconsBlock = ({ icons, category }) => (
   <div className="flex flex-col gap-3 w-[47%] h-fi;;">
     {category && (
-      <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[rgba(38,255,0,0.97)] m-0">{category}</p>
+      <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[rgba(255,255,255,0.97)] m-0">{category}</p>
     )}
-    <div className="flex flex-wrap gap-5 items-start border-[3px] border-[#00ff15] rounded-xl p-6">
+    <div className="flex flex-wrap gap-5 items-start border-[3px] border-[#ffffff] rounded-xl p-6">
       {icons.map((skill) => (
         <div
           key={skill.name}
-          className="flex flex-col items-center gap-3 py-5 px-6 border-2 border-transparent rounded-xl cursor-default transition-all duration-300 min-w-[100px] hover:-translate-y-1 hover:border-[#39ff14] hover:bg-white/5"
+          className="flex flex-col items-center gap-3 py-5 px-6 border-2 border-transparent rounded-xl cursor-default transition-all duration-300 min-w-[100px] hover:-translate-y-1 hover:border-[#ffffff] hover:bg-white/5"
         >
           <img
             src={skill.logo}
@@ -71,7 +71,7 @@ function Skills() {
         className="font-bold tracking-[0.2em] uppercase m-0"
         style={{
           fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-          background: "linear-gradient(135deg, #ccffcc 0%, #39ff14 100%)",
+          background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",

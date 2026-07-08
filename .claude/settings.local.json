@@ -70,7 +70,11 @@
       "Bash(pkill -f \"remote-debugging-port\" 2>/dev/null; rm -rf /tmp/chrome-profile /tmp/chrome-profile2 /tmp/chrome_cdp.log; echo cleaned)",
       "Bash(git status *)",
       "Bash(git add *)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(git commit *)",
+      "Bash(git ls-tree *)",
+      "Bash(timeout 15 npx vite build)",
+      "Bash(npx vite *)"
     ],
     "additionalDirectories": [
       "/home/carson/Desktop/work/portfolio/rule_based_chatbot/.git",

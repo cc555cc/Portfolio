@@ -43,7 +43,7 @@ function Resume() {
         className="font-bold tracking-[0.2em] uppercase m-0"
         style={{
           fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
-          background: "linear-gradient(135deg, #ccffcc 0%, #39ff14 100%)",
+          background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           backgroundClip: "text",
@@ -70,7 +70,7 @@ function Resume() {
       </div>
       <p className="text-[1.1rem] text-white/65 m-0">DOWNLOAD MY RESUME HERE</p>
       <a
-        className="py-3 px-8 border-2 border-[#39ff14] rounded-lg text-[#39ff14] text-base font-semibold tracking-[0.1em] no-underline uppercase transition-colors duration-[250ms] hover:bg-[#39ff14] hover:text-black"
+        className="py-3 px-8 border-2 border-[#ffffff] rounded-lg text-[#ffffff] text-base font-semibold tracking-[0.1em] no-underline uppercase transition-colors duration-[250ms] hover:bg-[#ffffff] hover:text-black"
         href={resumePdf}
         download="Carson_Resume.pdf"
       >

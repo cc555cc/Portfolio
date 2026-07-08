@@ -24,7 +24,7 @@ function App(){
               <Name />
             </div>
             <div className="shrink-0">
-              <img src={avatar} alt="Avatar" style={{ width: 'clamp(240px, 34vw, 500px)', maxHeight: '80vh', objectFit: 'contain', borderRadius: '12px', border: '2px solid #39ff14', boxShadow: '0 0 18px rgba(57,255,20,0.45), 0 0 60px rgba(57,255,20,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
+              <img src={avatar} alt="Avatar" style={{ width: 'clamp(240px, 34vw, 500px)', maxHeight: '80vh', objectFit: 'contain', borderRadius: '12px', border: '2px solid #ffffff', boxShadow: '0 0 18px rgba(255, 255, 255,0.45), 0 0 60px rgba(255, 255, 255,0.15)', filter: 'brightness(1.05) contrast(1.05)' }}/>
             </div>
           </div>
         </div>
