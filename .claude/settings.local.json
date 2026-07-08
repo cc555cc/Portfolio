@@ -68,6 +68,7 @@
       "Bash(google-chrome --headless=new --no-sandbox --disable-gpu --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile --window-size=1920,1080 about:blank)",
       "Bash(timeout 5 google-chrome --headless=new --no-sandbox --disable-gpu --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-profile2 about:blank)",
       "Bash(pkill -f \"remote-debugging-port\" 2>/dev/null; rm -rf /tmp/chrome-profile /tmp/chrome-profile2 /tmp/chrome_cdp.log; echo cleaned)",
+<<<<<<< HEAD
       "Bash(git -C /home/carson/Desktop/work/portfolio add src/module/chatbot/chatbot.jsx src/App.jsx src/module/introduction/introduction.jsx)",
       "Bash(git -C /home/carson/Desktop/work/portfolio ls-files package-lock.json)",
       "Bash(git -C /home/carson/Desktop/work/portfolio log --oneline -8)",
@@ -79,6 +80,15 @@
       "Bash(git -C /home/carson/Desktop/work/portfolio show d3080df -- package.json)",
       "Bash(git -C /home/carson/Desktop/work/portfolio fetch origin)",
       "Bash(git -C /home/carson/Desktop/work/portfolio log --oneline origin/master -5)"
+=======
+      "Bash(git status *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit *)",
+      "Bash(git ls-tree *)",
+      "Bash(timeout 15 npx vite build)",
+      "Bash(npx vite *)"
+>>>>>>> 7805a4541165f71a714f97811bf521102f8a9e34
     ],
     "additionalDirectories": [
       "/home/carson/Desktop/work/portfolio/rule_based_chatbot/.git",

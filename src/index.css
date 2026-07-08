@@ -13,7 +13,7 @@ html, body {
   overflow: hidden;
   min-height: 100vh;
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(57, 255, 20, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.12) 0%, transparent 60%),
     #000000;
   background-attachment: fixed;
 }
@@ -27,6 +27,6 @@ html, body {
 }
 
 .chatbot-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(57, 255, 20, 0.25);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 2px;
 }
