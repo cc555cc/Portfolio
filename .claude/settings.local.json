@@ -73,7 +73,12 @@
       "Bash(git -C /home/carson/Desktop/work/portfolio log --oneline -8)",
       "Bash(git -C /home/carson/Desktop/work/portfolio show 813add9 --name-only)",
       "Bash(git -C /home/carson/Desktop/work/portfolio show c0fb53c --name-only)",
-      "Bash(git -C /home/carson/Desktop/work/portfolio show b764306 --name-only)"
+      "Bash(git -C /home/carson/Desktop/work/portfolio show b764306 --name-only)",
+      "Bash(git -C /home/carson/Desktop/work/portfolio show b764306 -- package.json)",
+      "Bash(git -C /home/carson/Desktop/work/portfolio log --oneline --all -- package.json)",
+      "Bash(git -C /home/carson/Desktop/work/portfolio show d3080df -- package.json)",
+      "Bash(git -C /home/carson/Desktop/work/portfolio fetch origin)",
+      "Bash(git -C /home/carson/Desktop/work/portfolio log --oneline origin/master -5)"
     ],
     "additionalDirectories": [
       "/home/carson/Desktop/work/portfolio/rule_based_chatbot/.git",
