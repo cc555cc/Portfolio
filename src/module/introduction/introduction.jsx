@@ -22,7 +22,7 @@ function Introduction() {
       </h2>
       <div className="flex flex-row items-center gap-8 ">
         <p
-          className="font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1.8vw, 1.8rem)] text-[#ffffff]"
+          className="font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1.8vw, 1.8rem)] text-[#ffffff] animate-fade-in"
           style={{
             fontSize: "clamp(0.8rem, 1.8vw, 1.8rem)",
             background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
