@@ -38,21 +38,21 @@ function Name() {
         >
           Software Engineer
         </div>
-        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(255, 255, 255,0.6)]">
+        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgb(255, 255, 255)]">
           Passionate and dedicated software engineering 3rd year student at Ontario Tech University
         </div>
-        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(255, 255, 255,0.6)]">
+        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgb(255, 255, 255)]">
           Experienced in full-stack development, agile development practices and CI/CD pipeline development
         </div>
-        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgba(255, 255, 255,0.6)]">
+        <div className="text-sm text-white/60 leading-relaxed my-2 before:content-['—_'] before:text-[rgb(255, 255, 255)]">
           Proficient in Python, Javascript, C, C++, MySQL
         </div>
         <div style={{display: 'flex', gap: '1em', marginTop: '3em', alignItems: 'center'}}>
           <span style={{color: 'rgb(255, 255, 255)', fontSize: '1.5em'}}>Find me on: </span>
           <span><a href="https://www.linkedin.com/in/lok-yung-chan-116051327/" target="_blank" rel="noopener noreferrer"><img style={{width:'2em', height:'2em'}} src={linkedinIcon} alt="LinkedIn" /></a></span>
-          <span style={{color: 'rgba(255,255,255,0.4)'}}>|</span>
+          <span style={{color: 'rgb(255, 255, 255)'}}>|</span>
           <span><a href="https://github.com/cc555cc" target="_blank" rel="noopener noreferrer"><img style={{width:'2em', height:'2em', mixBlendMode: 'screen', borderRadius: '50%'}} src={githubIcon} alt="GitHub" /></a></span>
-          <span style={{color: 'rgba(255,255,255,0.4)'}}>|</span>
+          <span style={{color: 'rgb(255, 255, 255)'}}>|</span>
           <span><a href="https://www.instagram.com/lokk_0555/" target="_blank" rel="noopener noreferrer"><img style={{width:'2em', height:'2em'}} src={instagramIcon} alt="Instagram" /></a></span>
         </div>
         <div style={{margin: '3em 0', display: 'flex', gap: '1em', flexWrap: 'wrap'}}>

@@ -22,7 +22,7 @@ function Introduction() {
       </h2>
       <div className="flex flex-row items-center gap-8 ">
         <p
-          className="font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1.8vw, 1.8rem)] text-[#ffffff] animate-fade-in"
+          className="font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1.8vw, 1.8rem)] text-[#ffffff]"
           style={{
             fontSize: "clamp(0.8rem, 1.8vw, 1.8rem)",
             background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
@@ -50,7 +50,7 @@ function Introduction() {
           }}> Most of my experience comes from academic and private projects. I like to create convenient solutions for real-world problems.
           </p>
       </div>
-      <div className="text-sm text-white/60 leading-relaxed my-2  before:text-[rgba(255, 255, 255,0.6)]" style={{ display: 'flex', flexDirection: 'row', gap: '1em', flexWrap: 'wrap' }}>
+      <div className="text-sm text-white/60 leading-relaxed my-2  before:text-[rgba(255, 255, 255,0.6)]">
           <p className="font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1.8vw, 1.8rem)] text-[#ffffff]"
           style={{
             fontSize: "clamp(0.8rem, 1.8vw, 1.8rem)",
@@ -68,8 +68,8 @@ function Introduction() {
             <img src={phpIcon} alt="PHP" className="h-[5em] w-auto flex-shrink-0 rounded-2xl mr-10" />
             </div>
       </div>
-      <div className="text-sm text-white/60 leading-relaxed my-2  before:text-[rgba(255, 255, 255,0.6)]">
-          <p className="font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1vw, 1rem)] text-[#ffffff]"
+      <div className="w-full flex flex-col items-center text-sm text-white/60 leading-relaxed text-center before:text-[rgb(255, 255, 255)]">
+          <p className="mb-7 font-light tracking-[0.2em] uppercase leading-[1.8] fontSize-[clamp(0.3rem, 1vw, 1rem)] text-[#ffffff]"
           style={{
             fontSize: "clamp(0.3rem, 1vw, 1rem)",
             background: "linear-gradient(135deg, #ffffff 0%, #ffffff 100%)",
@@ -77,6 +77,23 @@ function Introduction() {
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
           }}>  Checkout more of my work in the Projects section</p>
+          <style>{`
+            .scroll-arrow {
+              animation: bounce 1.6s ease-in-out infinite;
+            }
+            @keyframes bounce {
+              0%, 100% { transform: translateY(0); }
+              50%       { transform: translateY(12px); }
+            }
+          `}</style>
+
+          <svg width="56" height="32" viewBox="0 0 56 32" xmlns="http://www.w3.org/2000/svg" className="scroll-arrow">
+            <path d="M4 4 L28 28 L52 4" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </div>
+      <div className="">
+
       </div>
     </section>
   )

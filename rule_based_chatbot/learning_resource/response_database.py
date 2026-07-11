@@ -187,9 +187,6 @@ STOP_WORDS = [
 PORTFOLIO_INFO = {
     "greeting": {
         "responses": [
-            "Hi! I'm a chatbot created by Carson. I was created as a restaurant themed rule-based but is now adjusted"
-            "to reply question regarding to his skills, projects, resume, or how to get in touch. Unfortunately, as a rule-based chatbot,my ability to answer is limited by "
-            "the keywords that I was trained on. If you ask me something that I don't know, I will let you know.",
             "Hey there! I can tell you about Carson's background, skills, projects, or experience.",
             "Hello! What would you like to know about Carson?",
         ],
@@ -201,7 +198,7 @@ PORTFOLIO_INFO = {
         "response": "Carson is proficient in Python, JavaScript, C, C++, and MySQL. He has hands-on experience with React, Flask, full-stack development, agile methodologies, and CI/CD pipeline development.",
     },
     "projects": {
-        "response": "Carson has built several projects, including this portfolio site with a rule-based AI chatbot backend, and various full-stack applications. Check out the Projects section on this page for the full list!",
+        "response": "Carson has built several projects, including this portfolio site with a rule-based AI chatbot backend, and various full-stack applications. He is currently working on his first android note-taking app.Check out the Projects section on this page for the full list!",
     },
     "experience": {
         "response": "Carson has experience in full-stack development, agile development practices, and CI/CD pipeline development, gained through coursework and personal projects at Ontario Tech University.",

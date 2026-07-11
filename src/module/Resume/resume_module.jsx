@@ -53,7 +53,7 @@ function Resume() {
       </h2>
       <div
         ref={containerRef}
-        className="flex-1 h-[90%] w-[27%] flex items-center justify-center overflow-hidden rounded-xl border"
+        className="flex-1 h-[90%] w-[27%] flex items-center justify-center overflow-hidden rounded-xl "
       >
         <Document file={resumePdf}>
           <Page

@@ -12,6 +12,9 @@ import logoTailwind       from "../../assets/TailwindCSS_logo.png"
 import logoTS             from "../../assets/Typescript_logo_2020.svg.png"
 import logoGitHubActions  from "../../assets/github_action_logo.png"
 import logoYAML           from "../../assets/YAML-1.jpg"
+import logoAndroidStudio  from "../../assets/androidStudioIcon.png"
+import jenkinIcon         from "../../assets/jenkinLogo.png"
+import dockerIcon         from "../../assets/dockerIcon.jpg"
 
 const frontend_icons = [
   { name: "HTML",        logo: logoHTML },
@@ -37,6 +40,9 @@ const dataml_icons = [
 const tools_icons = [
   { name: "GitHub Actions", logo: logoGitHubActions },
   { name: "YAML",           logo: logoYAML,          removeBg: true },
+  { name: "Android Studio", logo: logoAndroidStudio },
+  { name: "Jenkins",        logo: jenkinIcon,        removeBg: true },
+  { name: "Docker",         logo: dockerIcon,        removeBg: true },
 ]
 
 const IconsBlock = ({ icons, category }) => (
@@ -79,14 +85,14 @@ function Skills() {
       >
         Skills
       </h2>
-      <div className="flex flex-col gap-8 w-full overflow-y-auto [scrollbar-width:none] pb-4">
+      <div className="flex flex-col gap-8 w-full  [scrollbar-width:none] pb-4">
         <div className="flex flex-row justify-between">
           <IconsBlock icons={frontend_icons} category="Frontend" />
-          <IconsBlock icons={backend_icons}  category="Backend" />
+          <IconsBlock icons={tools_icons}  category="Tools" />
         </div>
         <div className="flex flex-row justify-between">
-          <IconsBlock icons={dataml_icons}   category="Data / ML" />
-          <IconsBlock icons={tools_icons}    category="Tools" />
+          <IconsBlock icons={backend_icons}   category="Backend" />
+          <IconsBlock icons={dataml_icons}    category="Data / ML" />
         </div>
       </div>
     </section>

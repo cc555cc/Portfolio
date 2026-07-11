@@ -15,7 +15,7 @@ export default {
       },
       animation: {
         'chatbot-blink': 'chatbot-blink 1.2s infinite',
-        'fade-in': 'fade-in 0.5s ease-in-out',
+        'fade-in': 'fade-in 0.5s ease-in-out forwards',
       },
     },
   },
